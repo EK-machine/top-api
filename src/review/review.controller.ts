@@ -13,7 +13,7 @@ export class ReviewController {
 
 	}
 
-	@Get('byProduct:productId')
+	@Get('byProduct/:productId')
 	async getByProduct(@Param('productId') productId: string) {
 
 	}
