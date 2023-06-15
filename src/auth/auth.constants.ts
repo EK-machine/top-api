@@ -1,0 +1,1 @@
+export const ALREADY_REGISTERED_ERROR = 'user with this login already exist';
