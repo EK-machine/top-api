@@ -2,6 +2,7 @@ import { Module } from '@nestjs/common';
 import { TopPageController } from './top-page.controller';
 import { TypegooseModule } from 'nestjs-typegoose';
 import { TopPageModel } from './top-page.model';
+import { TopPageService } from './top-page.service';
 
 @Module({
   imports: [TypegooseModule.forFeature([{
@@ -10,6 +11,7 @@ import { TopPageModel } from './top-page.model';
       collection: 'TopPage'
     }
   }])],
-  controllers: [TopPageController]
+  controllers: [TopPageController],
+  providers: [TopPageService]
 })
 export class TopPageModule {}

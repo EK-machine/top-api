@@ -15,7 +15,7 @@ import { CreateReviewDto } from './dto/create-review.dto';
 import { ReviewService } from './review.service';
 import { REVIEW_NOT_FOND } from './review.constants';
 import { JwtAuthGuard } from 'src/auth/guards/jwt.guard';
-import { IdValidationPipe } from 'src/pipes/ad-validation.pipe';
+import { IdValidationPipe } from 'src/pipes/id-validation.pipe';
 
 @Controller('review')
 export class ReviewController {
